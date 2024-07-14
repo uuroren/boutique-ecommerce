@@ -65,15 +65,15 @@ This project uses the onion architecture to ensure maintainability and testabili
 ### Installation
 
 1. Clone the repository:
-   \`\`\`sh
+   ```sh
    git clone https://github.com/uuroren/boutique-ecommerce.git
    cd boutique-ecommerce
-   \`\`\`
+   ```
 
 2. Restore the dependencies:
-   \`\`\`sh
+   ```sh
    dotnet restore
-   \`\`\`
+   ```
 
 ### Database Configuration
 
@@ -99,8 +99,8 @@ Make sure ElasticSearch is installed and running. You can follow the [ElasticSea
 
 ### Environment Variables
 
-Set up environment variables in \`appsettings.json\` or create a \`secrets.json\` file for sensitive data:
-\`\`\`json
+Set up environment variables in `appsettings.json` or create a `secrets.json` file for sensitive data:
+```json
 {
   "ConnectionStrings": {
     "MongoDB": "your_mongodb_connection_string",
@@ -121,60 +121,60 @@ Set up environment variables in \`appsettings.json\` or create a \`secrets.json\
     "BaseUrl": "your_iyzico_base_url"
   }
 }
-\`\`\`
+```
 
 ## Usage
 
 ### Running the Application
 
 Run the application using the following command:
-\`\`\`sh
+```sh
 dotnet run
-\`\`\`
+```
 
 ### Accessing Swagger
 
-Once the application is running, you can access the API documentation and test the endpoints using Swagger by navigating to \`http://localhost:5000/swagger\`.
+Once the application is running, you can access the API documentation and test the endpoints using Swagger by navigating to `http://localhost:5000/swagger`.
 
 ## API Endpoints
 
 ### Authentication
 
-- **POST** \`/api/auth/register\` - Register a new user
-- **POST** \`/api/auth/login\` - Login and obtain JWT token
-- **POST** \`/api/auth/verify\` - Verify phone number with SMS
+- **POST** `/api/auth/register` - Register a new user
+- **POST** `/api/auth/login` - Login and obtain JWT token
+- **POST** `/api/auth/verify` - Verify phone number with SMS
 
 ### Products
 
-- **GET** \`/api/products\` - Get all products
-- **GET** \`/api/products/{id}\` - Get a specific product by ID
-- **POST** \`/api/products\` - Create a new product
-- **PUT** \`/api/products/{id}\` - Update an existing product
-- **DELETE** \`/api/products/{id}\` - Delete a product
+- **GET** `/api/products` - Get all products
+- **GET** `/api/products/{id}` - Get a specific product by ID
+- **POST** `/api/products` - Create a new product
+- **PUT** `/api/products/{id}` - Update an existing product
+- **DELETE** `/api/products/{id}` - Delete a product
 
 ### Categories
 
-- **GET** \`/api/categories\` - Get all categories
-- **GET** \`/api/categories/{id}\` - Get a specific category by ID
-- **POST** \`/api/categories\` - Create a new category
-- **PUT** \`/api/categories/{id}\` - Update an existing category
-- **DELETE** \`/api/categories/{id}\` - Delete a category
+- **GET** `/api/categories` - Get all categories
+- **GET** `/api/categories/{id}` - Get a specific category by ID
+- **POST** `/api/categories` - Create a new category
+- **PUT** `/api/categories/{id}` - Update an existing category
+- **DELETE** `/api/categories/{id}` - Delete a category
 
 ### Comments
 
-- **GET** \`/api/comments\` - Get all comments
-- **GET** \`/api/comments/{id}\` - Get a specific comment by ID
-- **POST** \`/api/comments\` - Create a new comment
-- **PUT** \`/api/comments/{id}\` - Update an existing comment
-- **DELETE** \`/api/comments/{id}\` - Delete a comment
+- **GET** `/api/comments` - Get all comments
+- **GET** `/api/comments/{id}` - Get a specific comment by ID
+- **POST** `/api/comments` - Create a new comment
+- **PUT** `/api/comments/{id}` - Update an existing comment
+- **DELETE** `/api/comments/{id}` - Delete a comment
 
 ### Orders
 
-- **GET** \`/api/orders\` - Get all orders
-- **GET** \`/api/orders/{id}\` - Get a specific order by ID
-- **POST** \`/api/orders\` - Create a new order
-- **PUT** \`/api/orders/{id}\` - Update an existing order
-- **DELETE** \`/api/orders/{id}\` - Delete an order
+- **GET** `/api/orders` - Get all orders
+- **GET** `/api/orders/{id}` - Get a specific order by ID
+- **POST** `/api/orders` - Create a new order
+- **PUT** `/api/orders/{id}` - Update an existing order
+- **DELETE** `/api/orders/{id}` - Delete an order
 
 ## Background Services
 
