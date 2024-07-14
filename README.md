@@ -55,7 +55,7 @@ This project uses the onion architecture to ensure maintainability and testabili
 
 ### Prerequisites
 
-- .NET 6 SDK
+- .NET 8 SDK
 - MongoDB
 - PostgreSQL
 - Redis
